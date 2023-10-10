@@ -26,27 +26,11 @@ concepts. For documentation of your own system you use better the
 Describes the relevant requirements and the driving forces that software
 architects and development team must consider. These include
 
-| Quality Goals |               |                                                                                                           |
-|---------------|---------------|-----------------------------------------------------------------------------------------------------------|
-| Priority      | Quality       | Motivation                                                                                                |
-| 1             | Usability     | Users are more likely to continue using the app, recommend it to others                                   |
-| 2             | Reliability   | A trustworthy app builds trust with users and they are more likely to rely on it for sharing their images |
-| 3             | Compatibility | Users should be able to use the app on their preferred devices.                                           |
-
 -   essential features,
 
 -   essential functional requirements,
 
 -   quality goals for the architecture and
-
-|     Stakeholders                     |     Expectations                                                                                                     |
-|--------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-|     Photography enthusiast/expert    |     Multifunctional editing tool. Sharing   their images/filters with others                                         |
-|     Pixlr                            |     An app which uses and incorporates good   features                                                               |
-|     Financial department             |     A good pricing to the app which   provides the necessary funds for the company                                   |
-|     Marketing Manager                |     Unique selling points and features to   highlight in promotional materials     Insight to the target audience    |
-|     Sponsors                         |     A user friendly app with good community   guidelines and no explicit content                                     |
-
 
 ## Requirements Overview
 
@@ -59,37 +43,18 @@ Fancygram is a specialized platform crafted with the primary goal of empowering 
 ## Quality Goals
 
 <div class="formalpara-title">
+</div>
 
-**Contents**
+| Quality Goals |               |                                                                                                           |
+|---------------|---------------|-----------------------------------------------------------------------------------------------------------|
+| Priority      | Quality       | Motivation                                                                                                |
+| 1             | Usability     | Users are more likely to continue using the app, recommend it to others                                   |
+| 2             | Reliability   | A trustworthy app builds trust with users and they are more likely to rely on it for sharing their images |
+| 3             | Compatibility | Users should be able to use the app on their preferred devices.                                           |
 
 </div>
 
-The top three (max five) quality goals for the architecture whose
-fulfillment is of highest importance to the major stakeholders. We
-really mean quality goals for the architecture. Don’t confuse them with
-project goals. They are not necessarily identical.
-
-Consider this overview of potential topics (based upon the ISO 25010
-standard):
-
-![Categories of Quality
-Requirements](images/01_2_iso-25010-topics-EN.drawio.png)
-
 <div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-You should know the quality goals of your most important stakeholders,
-since they will influence fundamental architectural decisions. Make sure
-to be very concrete about these qualities, avoid buzzwords. If you as an
-architect do not know how the quality of your work will be judged…
-
-<div class="formalpara-title">
-
-**Form**
-
 </div>
 
 A table with quality goals and concrete scenarios, ordered by priorities
@@ -98,47 +63,15 @@ A table with quality goals and concrete scenarios, ordered by priorities
 
 <div class="formalpara-title">
 
-**Contents**
+|     Role/Name                        |  Contact details                  |     Expectations                                                                                                     |
+|--------------------------------------|-----------------------------------|----------------------------------------------------------------------------------------------------------------------|
+|     Photography enthusiast/expert    |  Lucas.Rodriguez@gmail.com        |     Multifunctional editing tool. Sharing   their images/filters with others                                         |
+|     Pixlr                            |  pix.lr@gmail.com                 |     An app which uses and incorporates good   features                                                               |
+|     Financial department             |  Laura.Kraner@gmail.com           |     A good pricing to the app which   provides the necessary funds for the company                                   |
+|     Marketing Manager                |  Sahra.chen@gmail.com             |     Unique selling points and features to   highlight in promotional materials     Insight to the target audience    |
+|     Indian bilionaire               |  dominig.Kalikal.senior@gmail.com |     A user friendly app with good community guidelines and no explicit content                                       |
 
 </div>
-
-Explicit overview of stakeholders of the system, i.e. all person, roles
-or organizations that
-
--   should know the architecture
-
--   have to be convinced of the architecture
-
--   have to work with the architecture or with code
-
--   need the documentation of the architecture for their work
-
--   have to come up with decisions about the system or its development
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-You should know all parties involved in development of the system or
-affected by the system. Otherwise, you may get nasty surprises later in
-the development process. These stakeholders determine the extent and the
-level of detail of your work and its results.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-Table with role names, person names, and their expectations with respect
-to the architecture and its documentation.
-
-| Role/Name   | Contact        | Expectations       |
-|-------------|----------------|--------------------|
-| *\<Role-1>* | *\<Contact-1>* | *\<Expectation-1>* |
-| *\<Role-2>* | *\<Contact-2>* | *\<Expectation-2>* |
 
 <div style="page-break-after: always;"></div>
 
