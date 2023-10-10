@@ -26,7 +26,12 @@ concepts. For documentation of your own system you use better the
 Describes the relevant requirements and the driving forces that software
 architects and development team must consider. These include
 
--   underlying business goals,
+| Quality Goals |               |                                                                                                           |
+|---------------|---------------|-----------------------------------------------------------------------------------------------------------|
+| Priority      | Quality       | Motivation                                                                                                |
+| 1             | Usability     | Users are more likely to continue using the app, recommend it to others                                   |
+| 2             | Reliability   | A trustworthy app builds trust with users and they are more likely to rely on it for sharing their images |
+| 3             | Compatibility | Users should be able to use the app on their preferred devices.                                           |
 
 -   essential features,
 
