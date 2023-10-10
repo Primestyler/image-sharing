@@ -26,7 +26,12 @@ concepts. For documentation of your own system you use better the
 Describes the relevant requirements and the driving forces that software
 architects and development team must consider. These include
 
--   underlying business goals,
+| Quality Goals |               |                                                                                                           |
+|---------------|---------------|-----------------------------------------------------------------------------------------------------------|
+| Priority      | Quality       | Motivation                                                                                                |
+| 1             | Usability     | Users are more likely to continue using the app, recommend it to others                                   |
+| 2             | Reliability   | A trustworthy app builds trust with users and they are more likely to rely on it for sharing their images |
+| 3             | Compatibility | Users should be able to use the app on their preferred devices.                                           |
 
 -   essential features,
 
@@ -34,7 +39,14 @@ architects and development team must consider. These include
 
 -   quality goals for the architecture and
 
--   relevant stakeholders and their expectations
+|     Stakeholders                     |     Expectations                                                                                                     |
+|--------------------------------------|----------------------------------------------------------------------------------------------------------------------|
+|     Photography enthusiast/expert    |     Multifunctional editing tool. Sharing   their images/filters with others                                         |
+|     Pixlr                            |     An app which uses and incorporates good   features                                                               |
+|     Financial department             |     A good pricing to the app which   provides the necessary funds for the company                                   |
+|     Marketing Manager                |     Unique selling points and features to   highlight in promotional materials     Insight to the target audience    |
+|     Sponsors                         |     A user friendly app with good community   guidelines and no explicit content                                     |
+
 
 ## Requirements Overview
 
