@@ -914,34 +914,12 @@ Tabular or free form text.
 
 </div>
 
-A list of identified technical risks or technical debts, ordered by
-priority
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-“Risk management is project management for grown-ups” (Tim Lister,
-Atlantic Systems Guild.)
-
-This should be your motto for systematic detection and evaluation of
-risks and technical debts in the architecture, which will be needed by
-management stakeholders (e.g. project managers, product owners) as part
-of the overall risk analysis and measurement planning.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-List of risks and/or technical debts, probably including suggested
-measures to minimize, mitigate or avoid risks or reduce technical debts.
-
-See [Risks and Technical Debt](https://docs.arc42.org/section-11/) in
-the arc42 documentation.
+|Risks and Technical Debt         |                                                                                                                                                                       |
+|----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Risk/Technical Debt              | Description                                                                                                                                                           |
+| Inadequate scalability           | Systems could be slow, unresponsive or crash during high traffic periods.  This can be avoided or atleast minimized by using microservices                            |
+| Documentation debt               | Due to the fast growth of the system certain additions might be falsely or not documented at all.  This can be reduced by continues reminders by the various features |
+| Third-Party service dependencies | If the collaborator has problems or service difficulties, this sheds a bad light on our app.  This can be avoided or at least minimized by using microservices        |
 
 <div style="page-break-after: always;"></div>
 
