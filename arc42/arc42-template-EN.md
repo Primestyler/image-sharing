@@ -705,88 +705,19 @@ arc42 documentation.
 
 ## Quality Tree
 
-<div class="formalpara-title">
-
-**Content**
-
-</div>
-
-The quality tree (as defined in ATAM – Architecture Tradeoff Analysis
-Method) with quality/evaluation scenarios as leafs.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-The tree structure with priorities provides an overview for a sometimes
-large number of quality requirements.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-The quality tree is a high-level overview of the quality goals and
-requirements:
-
--   tree-like refinement of the term "quality". Use "quality" or
-    "usefulness" as a root
-
--   a mind map with quality categories as main branches
-
-In any case the tree should include links to the scenarios of the
-following section.
+![Quality_Tree](images/Quality_Tree.png)
 
 ## Quality Scenarios
 
 <div class="formalpara-title">
-
-**Contents**
-
-</div>
-
-Concretization of (sometimes vague or implicit) quality requirements
-using (quality) scenarios.
-
-These scenarios describe what should happen when a stimulus arrives at
-the system.
-
-For architects, two kinds of scenarios are important:
-
--   Usage scenarios (also called application scenarios or use case
-    scenarios) describe the system’s runtime reaction to a certain
-    stimulus. This also includes scenarios that describe the system’s
-    efficiency or performance. Example: The system reacts to a user’s
-    request within one second.
-
--   Change scenarios describe a modification of the system or of its
-    immediate environment. Example: Additional functionality is
-    implemented or requirements for a quality attribute change.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-Scenarios make quality requirements concrete and allow to more easily
-measure or decide whether they are fulfilled.
-
-Especially when you want to assess your architecture using methods like
-ATAM you need to describe your quality goals (from section 1.2) more
-precisely down to a level of scenarios that can be discussed and
-evaluated.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-Tabular or free form text.
+| Quality Attribute |  Description |
+|--------------------|------------------------|
+| Intuitive Design | The design is user-friendly and easy to navigate, reducing the learning curve for new users. |
+| Accessibility | The system is equipped with features to aid users with disabilities, including screen readers, keyboard shortcuts, and colorblind-friendly palettes. |
+| Backup Mechanism | There is a robust backup system in place to ensure users' data is stored securely and can be recovered in case of any failure. |
+| Consistent Output | The system performs reliably, delivering consistent output regardless of varying loads or conditions. |
+| Smooth Integration | The system integrates seamlessly with third-party services, maintaining high performance and compatibility. |
+| Cross-Platform | The system's interface and functionality are consistent across different operating systems, ensuring a uniform user experience. |
 
 <div style="page-break-after: always;"></div>
 
@@ -798,12 +729,13 @@ Tabular or free form text.
 
 </div>
 
-|Risks and Technical Debt         |                                                                                                                                                                       |
-|----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|Risk/Technical Debt              | Description                                                                                                                                                           |
-| Inadequate scalability           | Systems could be slow, unresponsive or crash during high traffic periods.  This can be avoided or atleast minimized by using microservices                            |
-| Documentation debt               | Due to the fast growth of the system certain additions might be falsely or not documented at all.  This can be reduced by continues reminders by the various features |
-| Third-Party service dependencies | If the collaborator has problems or service difficulties, this sheds a bad light on our app.  This can be avoided or at least minimized by using microservices        |
+| Risk/Technical Debt              | Description | Preventive Measures |
+|----------------------------------|-------------|---------------------|
+| Inadequate Scalability           | Systems could be slow, unresponsive, or crash during high traffic periods. | Utilize microservices architecture to enhance scalability and manage high traffic more efficiently. |
+| Documentation Debt               | Due to the fast growth of the system, certain additions might be falsely or not documented at all. | Implement continuous integration practices that include automatic documentation generation and regular reviews to ensure accuracy and completeness. |
+| Third-Party Service Dependencies | If a third-party service has problems or difficulties, it can negatively impact our app. | Design the system with fallback options and ensure microservices can operate independently to reduce reliance on any single third-party service. |
+| Technical Obsolescence           | The technology stack may become outdated, leading to increased security risks and maintenance challenges. | Regularly review and update the technology stack to current standards and invest in training for the development team on emerging technologies. |
+
 
 <div style="page-break-after: always;"></div>
 
