@@ -709,7 +709,6 @@ arc42 documentation.
 
 ## Quality Scenarios
 
-<div class="formalpara-title">
 | Quality Attribute  | Description |
 |--------------------|-------------|
 | Intuitive Design   | The design is user-friendly and easy to navigate, reducing the learning curve for new users. |
