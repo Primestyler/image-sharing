@@ -154,14 +154,22 @@ and input/output.
 
 # Solution Strategy
 
-<div class="formalpara-title">
+### Reliability
 
+To ensure that Fancygram works reliably, we've organized our system using something called microservices. It's like having different teams that can fix specific issues without affecting the whole system. This way, even if there are small problems, Fancygram remains reliable and doesn't crash.
 
-| Goal/Requirements | Architectural Approach                                                                          |
-|-------------------|-------------------------------------------------------------------------------------------------|
-| Reliability       | Through the possibility to fix certain areas with the entire system not crashing→  Microservice |
-| Scalability       | the possibility to expand our structure when the app gains a lot of attention                   |
-| User experience   | Bootstrap (html &css) in crafting visually appealing designs                                    |
+### Scalability
+
+As Fancygram becomes more popular, we want it to handle a lot of users smoothly. So, we've set up the system to grow easily as more people join. This way, Fancygram can handle more users, more pictures, and new features without slowing down. We're planning for Fancygram to grow and adapt as more people use it.
+
+### User Experience
+
+To make Fancygram visually appealing and user-friendly, we've chosen to use Bootstrap. It's a tool that helps us create a website that looks great and is easy for everyone to use. This decision is all about making Fancygram a pleasant and user-friendly platform.
+
+### Technology Choices and Team Collaboration
+
+We've also made important decisions about the technology we use. We chose AWS for our database because it's reliable and can grow with us. Our team collaborates using an agile process, which means we can be flexible and work well together. These choices are like the building blocks for Fancygram, ensuring it's strong, reliable, and set up for success.
+
 
 <div style="page-break-after: always;"></div>
 
