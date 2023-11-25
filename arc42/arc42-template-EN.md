@@ -98,82 +98,18 @@ A table with quality goals and concrete scenarios, ordered by priorities
 # System Scope and Context
 
 <div class="formalpara-title">
+    
+### Buisness Context
+![image](https://github.com/Primestyler/image-sharing/assets/127980400/12221d3e-08cf-4863-8c23-88d58a6a1659)
 
-**Contents**
-
-</div>
-
-System scope and context - as the name suggests - delimits your system
-(i.e. your scope) from all its communication partners (neighboring
-systems and users, i.e. the context of your system). It thereby
-specifies the external interfaces.
-
-If necessary, differentiate the business context (domain specific inputs
-and outputs) from the technical context (channels, protocols, hardware).
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-The domain interfaces and technical interfaces to communication partners
-are among your system’s most critical aspects. Make sure that you
-completely understand them.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-Various options:
-
--   Context diagrams
-
--   Lists of communication partners and their interfaces.
-
-See [Context and Scope](https://docs.arc42.org/section-3/) in the arc42
-documentation.
-
-## Business Context
-
-<div class="formalpara-title">
-
-**Contents**
-
-</div>
-
-Specification of **all** communication partners (users, IT-systems, …)
-with explanations of domain specific inputs and outputs or interfaces.
-Optionally you can add domain specific formats or communication
-protocols.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-All stakeholders should understand which data are exchanged with the
-environment of the system.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-All kinds of diagrams that show the system as a black box and specify
-the domain interfaces to communication partners.
-
-Alternatively (or additionally) you can use a table. The title of the
-table is the name of your system, the three columns contain the name of
-the communication partner, the inputs, and the outputs.
-
-**\<Diagram or Table>**
-
-**\<optionally: Explanation of external domain interfaces>**
+| **User/System**  | **Description**                              | **Input**                                    | **Output**                                      |
+|------------------|----------------------------------------------|----------------------------------------------|-------------------------------------------------|
+| User             | The user interacting with Fancygram          | Uploads images                               | View edited images                              |
+| Fancygram        | The image sharing app                        | Receives image uploads                       | Processes and stores images                     |
+| AWS              | Cloud storage service                        | Receives images from Fancygram               | Stores and retrieves images in the cloud        |
+| Pixlr            | Image editing service providing filters      | Receives images from Fancygram for filtering | Returns edited images with applied filers       |
+| Social Media     | User are connected on social media           | Shares edited images from fancygram          | Displays shared images on respective platforms  |
+| Filters Database | Database storing custom and pre-made filters | Retrieves filters for image editing          | Stores and updates filters for future use       |
 
 ## Technical Context
 
