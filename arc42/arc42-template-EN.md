@@ -79,38 +79,19 @@ A table with quality goals and concrete scenarios, ordered by priorities
 
 <div class="formalpara-title">
 
-**Contents**
+### Technical Constraints 
+| ID  | Constraints                                       | Background and/or Motivation                                                                                                                                                                                                                                |
+|-----|---------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| TB1 | Memory friendly                                   | Memory can be limited (due to availability on a shared host or deployment to cloud based host).  If deployed to a cloud based solution, every megabyte of memory costs this especially effects us  due to us being a startup and not well funded as of now. |
+| TB2 | Deployable to a Linux server                      | Linux is suitable for industries that require customization, flexibility,  and low cost which we would prefer in the early stages of our project.                                                                                                           |
+| TB3 | Third party software must be available (PIXLR)    | Third party services libraries have their own requirements and limitations.  Furthermore licensing is key with these services, however it has to be confirmed  that the used filters fulfill our requirements and guidelines.                               |
+| TB4 | Data and Privacy regulations  (EU, USA and China) | Due to the large amount of data stored from the various user some guidelines  need to be upheld for the safety of our users as well as protection from legal repercussions.                                                                                 |
+| TB5 | Budget requirements                               | As a startup we only have a small budget (100 000 EUR).                                                                           
 
-</div>
-
-Any requirement that constraints software architects in their freedom of
-design and implementation decisions or decision about the development
-process. These constraints sometimes go beyond individual systems and
-are valid for whole organizations and companies.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-Architects should know exactly where they are free in their design
-decisions and where they must adhere to constraints. Constraints must
-always be dealt with; they may be negotiable, though.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-Simple tables of constraints with explanations. If needed you can
-subdivide them into technical constraints, organizational and political
-constraints and conventions (e.g. programming or versioning guidelines,
-documentation or naming conventions)
-
-See [Architecture Constraints](https://docs.arc42.org/section-2/) in the
-arc42 documentation.
+### Organizational Constraints
+| ID  | Constraints | Background and/or Motivation                                        
+|-----|-------------|---------------------------------------------------------------------|
+| OB1 | Team        | The team consists of Lin Hao, Hickelsberger and Kalarickal Dominic. |
 
 <div style="page-break-after: always;"></div>
 
