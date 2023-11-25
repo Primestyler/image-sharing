@@ -279,23 +279,62 @@ level without disclosing implementation details.
 
 <div class="formalpara-title">
 
-**Form**
+**Building Block View**
+
+
 
 </div>
 
-The building block view is a hierarchical collection of black boxes and
-white boxes (see figure below) and their descriptions.
+**Whitebox view**
+    
+**Level 1**
 
-![Hierarchy of building blocks](images/05_building_blocks-EN.png)
+Our system consists of eight main groupings. The Editor is our main program which is our company developed. The other Block interact with outer systems to provide information to our editing tool. As portrayed in the diagram bellow these consist of an upload to various social media platforms, a cloud storage system , a payment option as well as location services    
 
-**Level 1** is the white box description of the overall system together
-with black box descriptions of all contained building blocks.
+![level one Building Block View](images/Builidng_Block_View_levele_1.png)
+ 
+ 1 uploads: are responsible for distributing our edited images to outer systems. It can stand alone and be used to upload different files to other platforms if utilized for a different sales point. 
 
-**Level 2** zooms into some building blocks of level 1. Thus it contains
-the white box description of selected building blocks of level 1,
-together with black box descriptions of their internal building blocks.
+ 2 payment: controls the flow of money in our company. Moreover it also regulates which content is permitted to specific users, by passing on order confirmations to the user management. 
+ 
+ 3 User management: transfers user data to the editor to permit certain features. Moreover this Block handles the users and allows them to log in and sign up and manage their accounts. This can also be done by system administrators
 
-**Level 3** zooms into selected building blocks of level 2, and so on.
+ 4 Location: is used to accurately portray the current location of the users in images (if they want to and allow the function) so that they can share it to their community and show it as a sign of status. Moreover it helps customize certian features and filters for countries as well as language settings. This can however be disabled within the users device.
+
+5 File storage system AWS: is used to store filters, pictures and data.  this cooperates with user management and the editor aswell as the filters supplied and stored by pixlr. 
+
+6 Filters: are responsible for allowing users to saave and expand filters created by the editing tool and linking them to the Filters from Pixlr.
+ 
+7 Editor: This component is the heart of our System. It can be used to modify images and filters aswell as layer these. 
+
+**Level 2**  
+ **editor**
+ 
+ The editor consists of 7 blocks of which 3 communicate with outer systems. these allow the editor to accept pictures, export them through uploads as well as customizing filters. 
+ ![level two editor Building Block View](images/Builidng_Block_View_level_2_editor.png)
+
+1 Picture editing: consists of the user operating the tools inside the app and utilizing them to improve the images.
+
+2 Remodelling tools: provides the necessary tools to customise images as well as filters to improve them to the specific needs of the user
+
+3 Layer management: allows the user to apply more than one filter onto images or even layer filters over each other to create a new one. This can also be restricted due to free and premium user imbalance.
+
+4 Effects and filters: contain the already created filters with certain effects which have already been created. This includes already layered effects.
+
+5 Text tools: consist of all different elements used to output
+text onto images and filters. these can also be incorporated with location services to accurately portray locations and situations.
+
+6 Remodelling tools: are used to customize images and filters and complete the image or filter to the specific users liking . Moreover they are combined with  User management to ensure users get the Filters they paid for.
+
+**Level 3** 
+![level two editor Building Block View](images/Builidng_Block_View_level_3_remodelingtools.png)
+
+1 Artistic effects: are different images, emojis, gifs and tools which can be used to style and improve images and filters.
+
+2 Filter effects: are applied to images or layered over other filters to create a new style of an image or a new filter.
+
+3 colour corrections effects: are used to correct or improve contrasts of light or colours to make it more appealing for the user.
+
 
 See [Building Block View](https://docs.arc42.org/section-5/) in the
 arc42 documentation.
