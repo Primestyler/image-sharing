@@ -30,11 +30,13 @@ Fancygram is a unique social media platform tailored for those who love sharing 
 <div class="formalpara-title">
 Fancygram is a specialized platform crafted with the primary goal of empowering users to share and explore visually stunning, high-quality images that are distinctive from what is commonly found on other social media platforms. Its core mission is to facilitate the seamless sharing of such exceptional visuals within a tight-knit community. The app offers a range of essential features, including advanced tools for editing pictures, intuitive mechanisms for sharing and sorting images, seamless connectivity among users, opportunities to share editing tips and techniques, and an avenue for creating and participating in engaging challenges and competitions within the user community.
 
+
+
 | Feature                           | Use Case                                                                             |
 |---------------------------------------|------------------------------------------------------------------------------------------|
 | Photo Editing with Advanced Tools | Users creatively modify images using an array of advanced editing tools.                 |
-| Image Sharing and Sorting**          | Users upload, organize, and share their images, creating personalized galleries.         |
-| User Connections**                   | Users engage in conversations, collaborate on projects, and connect with like-minded individuals. |
+| Image Sharing and Sorting          | Users upload, organize, and share their images, creating personalized galleries.         |
+| User Connections*                  | Users engage in conversations, collaborate on projects, and connect with like-minded individuals. |
 | Share Editing Tips and Techniques | Users exchange insights, techniques, and tutorials, fostering a culture of learning.        |
 | Challenges and Competitions       | Users create and participate in challenges, adding a gamified layer to the platform.      |
 
