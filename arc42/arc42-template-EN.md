@@ -710,14 +710,15 @@ arc42 documentation.
 ## Quality Scenarios
 
 <div class="formalpara-title">
-| Quality Attribute |  Description |
-|--------------------|------------------------|
-| Intuitive Design | The design is user-friendly and easy to navigate, reducing the learning curve for new users. |
-| Accessibility | The system is equipped with features to aid users with disabilities, including screen readers, keyboard shortcuts, and colorblind-friendly palettes. |
-| Backup Mechanism | There is a robust backup system in place to ensure users' data is stored securely and can be recovered in case of any failure. |
-| Consistent Output | The system performs reliably, delivering consistent output regardless of varying loads or conditions. |
-| Smooth Integration | The system integrates seamlessly with third-party services, maintaining high performance and compatibility. |
-| Cross-Platform | The system's interface and functionality are consistent across different operating systems, ensuring a uniform user experience. |
+| Quality Attribute  | Description |
+|--------------------|-------------|
+| Intuitive Design   | The design is user-friendly and easy to navigate, reducing the learning curve for new users. |
+| Accessibility      | The system is equipped with features to aid users with disabilities, including screen readers, keyboard shortcuts, and colorblind-friendly palettes. |
+| Backup Mechanism    | There is a robust backup system in place to ensure users' data is stored securely and can be recovered in case of any failure. |
+| Consistent Output   | The system performs reliably, delivering consistent output regardless of varying loads or conditions. |
+| Smooth Integration  | The system integrates seamlessly with third-party services, maintaining high performance and compatibility. |
+| Cross-Platform      | The system's interface and functionality are consistent across different operating systems, ensuring a uniform user experience. |
+
 
 <div style="page-break-after: always;"></div>
 
