@@ -478,12 +478,36 @@ There are many notations for describing scenarios, e.g.
 See [Runtime View](https://docs.arc42.org/section-6/) in the arc42
 documentation.
 
-## \<Runtime Scenario 1>
+## Runtime Scenario 1
 
--   *\<insert runtime diagram or textual description of the scenario>*
+![image](https://github.com/Primestyler/image-sharing/assets/127980400/5dc2908c-219a-41db-9ba6-b5ee2537c0d7)
 
--   *\<insert description of the notable aspects of the interactions
-    between the building block instances depicted in this diagram.>*
+### User Image Upload:
+
+- The interaction begins with the User uploading an image to the Server/Editor.
+- This represents a straightforward user action, initiating the image editing process.
+
+### Permission Request to User Management:
+
+- After receiving the image, the Server/Editor requests permission from the User Management building block.
+- This step ensures that the user has the necessary permissions to access the editing tools.
+
+### Editing Tools Request to Editing Tools Database:
+
+- Upon obtaining permission, the Server/Editor requests the available editing tools from the Editing Tools Database.
+- This interaction signifies the dynamic nature of the application, where the available tools may vary based on user permissions.
+
+### Conditional Retrieval of Editing Tools:
+
+- The Editing Tools Database responds differently based on the user's subscription status.
+  - If the user has a paid version, all available editing tools are returned.
+  - If the user has a free version, a limited set of editing tools is returned.
+
+### Editing Tools Confirmation to User:
+
+- The Server/Editor sends a confirmation message to the User, informing them about the editing tools they have access to.
+- This confirmation is a crucial aspect of user communication, providing clarity on available features.
+
 
 ## \<Runtime Scenario 2>
 
