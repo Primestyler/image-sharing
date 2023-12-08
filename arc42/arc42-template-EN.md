@@ -251,169 +251,51 @@ text onto images and filters. these can also be incorporated with location servi
 
 6 Remodelling tools: are used to customize images and filters and complete the image or filter to the specific users liking . Moreover they are combined with  User management to ensure users get the Filters they paid for.
 
+**level 2: picture**
+
+![level two editor Building Block View](images/layer2-picture.png)
+1 Virus checker: check if the file is not corupted and all data still works.
+
+2 Format checker: check format to ensure it can be handeld from our system.
+
+3 Image converter: if the format doesnt match the needed format, it gets converted to png so it can be edited on our application.
+
+4 Filter Applicator: filters can be applied to the image when uploaded.
+
+![level two editor Building Block View](images/layer2-user-management.png)
+
+1 Data saver: Controlls the data of the user and the inputs while registering. they then can be processed and stored to a database.
+
+2 Data revison: entered data can be revised and changed. The changed values of course get validated again and then stored in the database
+
+3 account permission: The value if a payment has occured from this account is revieced from the financial division and then the permsissions can be passed on to the editor. Furthermore this also entails the oportunity to advertise and add the posiblity of further payments to this account.
+
+**locations** 
+
+stores locations with timestamps in near realtime and provides access to locations for the last 30 minutes
+
+![level two editor Building Block View](images/layer2-location.png)
+
+
+1 LocationController: manages the current locations needed for the app to post them on your images.
+
+2 LocationMessaging: this allows users transfer thier real time locations so that the app can present other users who are in their proximity.
+
+3 LocationsListener: Gets the timezones aswell as the current time at the specified location.
+
+4 LocationService: retrieve current coordinates of the user to accurately display them on the app allowing them to interact with users nearby as well as displaying it on their profile.
+
+5 LocationRepository: stores past locations so that we can sell them to whatsapp to make more money.
+
+
 **Level 3** 
-![level two editor Building Block View](images/Builidng_Block_View_level_3_remodelingtools.png)
+![level three editor Building Block View](images/Builidng_Block_View_level_3_remodelingtools.png)
 
 1 Artistic effects: are different images, emojis, gifs and tools which can be used to style and improve images and filters.
 
 2 Filter effects: are applied to images or layered over other filters to create a new style of an image or a new filter.
 
 3 colour corrections effects: are used to correct or improve contrasts of light or colours to make it more appealing for the user.
-
-
-See [Building Block View](https://docs.arc42.org/section-5/) in the
-arc42 documentation.
-
-## Whitebox Overall System
-
-Here you describe the decomposition of the overall system using the
-following white box template. It contains
-
--   an overview diagram
-
--   a motivation for the decomposition
-
--   black box descriptions of the contained building blocks. For these
-    we offer you alternatives:
-
-    -   use *one* table for a short and pragmatic overview of all
-        contained building blocks and their interfaces
-
-    -   use a list of black box descriptions of the building blocks
-        according to the black box template (see below). Depending on
-        your choice of tool this list could be sub-chapters (in text
-        files), sub-pages (in a Wiki) or nested elements (in a modeling
-        tool).
-
--   (optional:) important interfaces, that are not explained in the
-    black box templates of a building block, but are very important for
-    understanding the white box. Since there are so many ways to specify
-    interfaces why do not provide a specific template for them. In the
-    worst case you have to specify and describe syntax, semantics,
-    protocols, error handling, restrictions, versions, qualities,
-    necessary compatibilities and many things more. In the best case you
-    will get away with examples or simple signatures.
-
-***\<Overview Diagram>***
-
-Motivation  
-*\<text explanation>*
-
-Contained Building Blocks  
-*\<Description of contained building block (black boxes)>*
-
-Important Interfaces  
-*\<Description of important interfaces>*
-
-Insert your explanations of black boxes from level 1:
-
-If you use tabular form you will only describe your black boxes with
-name and responsibility according to the following schema:
-
-| **Name**         | **Responsibility** |
-|------------------|--------------------|
-| *\<black box 1>* |  *\<Text>*         |
-| *\<black box 2>* |  *\<Text>*         |
-
-If you use a list of black box descriptions then you fill in a separate
-black box template for every important building block . Its headline is
-the name of the black box.
-
-### \<Name black box 1>
-
-Here you describe \<black box 1> according the the following black box
-template:
-
--   Purpose/Responsibility
-
--   Interface(s), when they are not extracted as separate paragraphs.
-    This interfaces may include qualities and performance
-    characteristics.
-
--   (Optional) Quality-/Performance characteristics of the black box,
-    e.g.availability, run time behavior, ….
-
--   (Optional) directory/file location
-
--   (Optional) Fulfilled requirements (if you need traceability to
-    requirements).
-
--   (Optional) Open issues/problems/risks
-
-*\<Purpose/Responsibility>*
-
-*\<Interface(s)>*
-
-*\<(Optional) Quality/Performance Characteristics>*
-
-*\<(Optional) Directory/File Location>*
-
-*\<(Optional) Fulfilled Requirements>*
-
-*\<(optional) Open Issues/Problems/Risks>*
-
-### \<Name black box 2>
-
-*\<black box template>*
-
-### \<Name black box n>
-
-*\<black box template>*
-
-### \<Name interface 1>
-
-…
-
-### \<Name interface m>
-
-## Level 2
-
-Here you can specify the inner structure of (some) building blocks from
-level 1 as white boxes.
-
-You have to decide which building blocks of your system are important
-enough to justify such a detailed description. Please prefer relevance
-over completeness. Specify important, surprising, risky, complex or
-volatile building blocks. Leave out normal, simple, boring or
-standardized parts of your system
-
-### White Box *\<building block 1>*
-
-…describes the internal structure of *building block 1*.
-
-*\<white box template>*
-
-### White Box *\<building block 2>*
-
-*\<white box template>*
-
-…
-
-### White Box *\<building block m>*
-
-*\<white box template>*
-
-## Level 3
-
-Here you can specify the inner structure of (some) building blocks from
-level 2 as white boxes.
-
-When you need more detailed levels of your architecture please copy this
-part of arc42 for additional levels.
-
-### White Box \<\_building block x.1\_\>
-
-Specifies the internal structure of *building block x.1*.
-
-*\<white box template>*
-
-### White Box \<\_building block x.2\_\>
-
-*\<white box template>*
-
-### White Box \<\_building block y.1\_\>
-
-*\<white box template>*
 
 <div style="page-break-after: always;"></div>
 
