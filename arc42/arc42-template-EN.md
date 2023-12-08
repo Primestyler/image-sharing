@@ -232,7 +232,8 @@ Our system consists of eight main groupings. The Editor is our main program whic
  
 7 Editor: This component is the heart of our System. It can be used to modify images and filters aswell as layer these. 
 
-**Level 2**  
+**Level 2** 
+
  **editor**
  
  The editor consists of 7 blocks of which 3 communicate with outer systems. these allow the editor to accept pictures, export them through uploads as well as customizing filters. 
@@ -254,6 +255,7 @@ text onto images and filters. these can also be incorporated with location servi
 **level 2: picture**
 
 ![level two editor Building Block View](images/layer2-picture.png)
+
 1 Virus checker: check if the file is not corupted and all data still works.
 
 2 Format checker: check format to ensure it can be handeld from our system.
@@ -289,6 +291,7 @@ stores locations with timestamps in near realtime and provides access to locatio
 
 
 **Level 3** 
+
 ![level three editor Building Block View](images/Builidng_Block_View_level_3_remodelingtools.png)
 
 1 Artistic effects: are different images, emojis, gifs and tools which can be used to style and improve images and filters.
