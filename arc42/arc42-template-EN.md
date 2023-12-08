@@ -404,6 +404,9 @@ documentation.
 
 ## Runtime Scenario: Image Sharing
 
+![Runtime View](https://github.com/Primestyler/image-sharing/blob/main/arc42/images/Runtime_View2.png?raw=true)
+
+
 ### User Initiates Image Share:
 
 - The interaction begins with the User selecting the "Share" option in the app.
