@@ -172,21 +172,8 @@ and input/output.
 
 # Solution Strategy
 
-### Reliability
-
-To ensure that Fancygram works reliably, we've organized our system using something called microservices. It's like having different teams that can fix specific issues without affecting the whole system. This way, even if there are small problems, Fancygram remains reliable and doesn't crash.
-
-### Scalability
-
-As Fancygram becomes more popular, we want it to handle a lot of users smoothly. So, we've set up the system to grow easily as more people join. This way, Fancygram can handle more users, more pictures, and new features without slowing down. We're planning for Fancygram to grow and adapt as more people use it.
-
-### User Experience
-
-To make Fancygram visually appealing and user-friendly, we've chosen to use Bootstrap. It's a tool that helps us create a website that looks great and is easy for everyone to use. This decision is all about making Fancygram a pleasant and user-friendly platform.
-
-### Technology Choices and Team Collaboration
-
-We've also made important decisions about the technology we use. We chose AWS for our database because it's reliable and can grow with us. Our team collaborates using an agile process, which means we can be flexible and work well together. These choices are like the building blocks for Fancygram, ensuring it's strong, reliable, and set up for success.
+We want to archive consistency, easy deployment, and updates by using microservices architecture. This will make sure that Fancygram will be more resilient to failure and or overload. This should run smoothly because as time approaches, more of the commodity will be demanded. Therefore, we want to design a flexible system which is expected to increase in size as more people are using the app. Through this, Fancygram would capture more users, photographs, many other things. This way, we can predict on how Fancygram could grow with its increasing user base. The reason we selected Bootstrap is to give Fancygram a simple but beautiful view. This is all about designing a simple atmosphere of Fancygram platform. 
+Moreover, we have addressed some big concerns and questions raised on the technological options. First, we have chosen AWS simply for its dependability since it will be easy to scale as the business expands. We have an agile approach, which keeps our flexibility high and improves interactions among team members. Using Java for our web applications and a fast API(MQTT) design so that microservices can communicate with each other efficiently.
 
 
 <div style="page-break-after: always;"></div>
