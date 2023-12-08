@@ -598,100 +598,27 @@ Please copy the structure from level 1 for each selected element.
 
 # Cross-cutting Concepts
 
-<div class="formalpara-title">
-
-**Content**
-
-</div>
-
-This section describes overall, principal regulations and solution ideas
-that are relevant in multiple parts (= cross-cutting) of your system.
-Such concepts are often related to multiple building blocks. They can
-include many different topics, such as
-
--   models, especially domain models
-
--   architecture or design patterns
-
--   rules for using specific technology
-
--   principal, often technical decisions of an overarching (=
-    cross-cutting) nature
-
--   implementation rules
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-Concepts form the basis for *conceptual integrity* (consistency,
-homogeneity) of the architecture. Thus, they are an important
-contribution to achieve inner qualities of your system.
-
-Some of these concepts cannot be assigned to individual building blocks,
-e.g. security or safety.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-The form can be varied:
-
--   concept papers with any kind of structure
-
--   cross-cutting model excerpts or scenarios using notations of the
-    architecture views
-
--   sample implementations, especially for technical concepts
-
--   reference to typical usage of standard frameworks (e.g. using
-    Hibernate for object/relational mapping)
-
-<div class="formalpara-title">
-
-**Structure**
-
-</div>
-
-A potential (but not mandatory) structure for this section could be:
-
--   Domain concepts
-
--   User Experience concepts (UX)
-
--   Safety and security concepts
-
--   Architecture and design patterns
-
--   "Under-the-hood"
-
--   development concepts
-
--   operational concepts
-
-Note: it might be difficult to assign individual concepts to one
-specific topic on this list.
-
 ![Topics for crosscutting
 concepts](images/Crosscutting.png)
 
-## *\<Concept 1>*
+# Security and Safety
 
-*\<explanation>*
+We decided that Fancygram should follow the EU GDPR to ensure that user can put trust in our application. The data saved should always be retrievable and transparent. As for threat modelling, each design idea is being looked at to try to find weaknesses that may impact our system. Everything should be designed to anticipate threats and prevent security risks.
 
-## *\<Concept 2>*
+At last, the access control for users should be kept at the bare minimum. Each user should only get minimum access to perform the task needed. This is to prevent data breaches and improve data security.
 
-*\<explanation>*
+# Architecture
 
-…
+For architecture, it has been decided to use microservices for improved resilience and scalability. The microservices communicate with each other with MQTT API for real-time data exchange and lightweight protocol.
 
-## *\<Concept n>*
+To prevent system overloading, it has been decided to use AWS Elastic Load Balancing tool. It will not only improve event distribution but also prevent bottlenecks and system unresponsiveness.
 
-*\<explanation>*
+# Operation Concepts
+
+To keep the downtime as low as possible, everything should be monitored. The decision has fallen on the Nagios Monitoring system to monitor system health. It will be able to detect system failure, overload, or unresponsiveness. Furthermore, auto-scaling policies will be defined, so that each system does not need any manual work to scale if necessary.
+
+For minimal downtime, Continuous Integration and Deployment will be used so that code changes are built and tested automatically.
+
 
 <div style="page-break-after: always;"></div>
 
