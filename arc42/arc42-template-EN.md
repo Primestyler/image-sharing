@@ -121,16 +121,17 @@ A table with quality goals and concrete scenarios, ordered by priorities
 
 </div>
 
-| Component              | Description                                                                                              |
-|------------------------|----------------------------------------------------------------------------------------------------------|
-| **Web Server**         | The web server is responsible for handling HTTP requests and responses, serving as an API gateway.                |
-| **App Server 1,2** | Execute server-side application logic, handling the editing of our pictrues, and creating a connection to our AWS databases.                                   |
-| **Database**           | Central database where user data, images and filters are stored and retrieved.                                                       |
-| **Cache**              | We implemented a caching layer to increase our preformance speed. A more detailed expalanation is accesable in the point Deployment view.                |
-| **Backend**               | With microservices being our architecture and our platform being avalable for web, IOS and Andriod we used backend as a placeholder for the various programming languages.                                |
-| **Frontend**        |With microservices being our architecture and our platform being avalable for web, IOS and Andriod we used frontend as a placeholder for various Libraries, styling languages as well as formating elements.                                        |
-| **PostgreSQL**         |Is used as a relation database model. It not only is open source but also is compatable with AWS and is even offered as integrated service by Amazon (Amazon RDS (Relational Database Service))                                        
-| **External Service (Database)** | Represents an external service, such as AWS , facilitating seamless integration with Pixlr.                                           |
+| Component                   | Description                                                                                                                                                                                                  | Input                          | output                                  |
+|-----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|-----------------------------------------|
+| Web Server                  | The web server is responsible for handling HTTP requests and responses, serving as an API gateway.                                                                                                           | http requests                  | http response with requested data       |
+| App Server 1,2              | Execute server-side application logic, handling the editing of our pictrues, and creating a connection to our AWS databases.                                                                                 | Request from Web Server        | Response of processed request           |
+| Database                    | Central database where user data, images and filters are stored and retrieved.                                                                                                                               | SQL commands and/or Data       | Data                                    |
+| Cache                       | We implemented a caching layer to increase our preformance speed. A more detailed expalanation is accesable in the point Deployment view.                                                                    | Data                           | cached Data or messages related to data |
+| Backend                     | With microservices being our architecture and our platform being avalable for web, IOS and Andriod we used backend as a placeholder for the various programming languages.                                   |                                |                                         |
+| Frontend                    | With microservices being our architecture and our platform being avalable for web, IOS and Andriod we used frontend as a placeholder for various Libraries, styling languages as well as formating elements. | user interactions              | update page                             |
+| PostgreSQL                  | Is used as a relation database model. It not only is open source but also is compatable with AWS and is even offered as integrated service by Amazon (Amazon RDS (Relational Database Service))              | comands                        | data                                    |
+| External Service (Database) | Represents an external service, such as AWS , facilitating seamless integration with Pixlr.                                                                                                                  | requests from front or backend | Filters                                 |
+
 
 
 Technical interfaces (channels and transmission media) linking your
@@ -308,7 +309,7 @@ stores locations with timestamps in near realtime and provides access to locatio
 
 4 LocationService: retrieve current coordinates of the user to accurately display them on the app allowing them to interact with users nearby as well as displaying it on their profile.
 
-5 LocationRepository: stores past locations so that we can sell them to whatsapp to make more money.
+5 LocationRepository: stores locations of the past 30 min so that they can be used by the user for socialising with other users.
 
 
 **Level 3** 
