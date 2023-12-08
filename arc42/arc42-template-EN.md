@@ -23,14 +23,17 @@ concepts. For documentation of your own system you use better the
 
 # Introduction and Goals
 
-Fancygram is a unique social media platform tailored for those who love sharing and discovering exceptional images not commonly found on other platforms. Our main goal is to provide a creative space for users to showcase their editing skills, connect with like-minded individuals, and have fun with challenges and competitions. Fancygram is more than just a platform; it's a commitment to creativity, community, and quality. By meeting the expectations of our diverse stakeholders, Fancygram aims to be a space where visual expression has limitless possibilities.
+Fancygram will be a unique Social Media Platform where users can share their stunning images. These exceptional images can be modified by the in-app editing program. Our mission is to connect like minded individuals through their visual expressions. User cannot only share their images, but also their editing tips and tricks. The community will be challenged with engaging competitions and task where user interaction will be the key to winning. 
+
+To ensure that every stakeholder is satisfied Fancygram will meet the requirements of diverse Data protection guidelines so that its users can trust the team and. The system should also be designed for accessibility and consistency for the best user experience. The system should be designed for minimal downtime and best user experience. 
+
+
 
 ## Requirements Overview
 
 <div class="formalpara-title">
-Fancygram is a specialized platform crafted with the primary goal of empowering users to share and explore visually stunning, high-quality images that are distinctive from what is commonly found on other social media platforms. Its core mission is to facilitate the seamless sharing of such exceptional visuals within a tight-knit community. The app offers a range of essential features, including advanced tools for editing pictures, intuitive mechanisms for sharing and sorting images, seamless connectivity among users, opportunities to share editing tips and techniques, and an avenue for creating and participating in engaging challenges and competitions within the user community.
 
-
+</br>
 
 | Feature                           | Use Case                                                                             |
 |---------------------------------------|------------------------------------------------------------------------------------------|
