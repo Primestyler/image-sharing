@@ -601,19 +601,19 @@ Please copy the structure from level 1 for each selected element.
 ![Topics for crosscutting
 concepts](images/Crosscutting.png)
 
-# Security and Safety
+## Security and Safety
 
 We decided that Fancygram should follow the EU GDPR to ensure that user can put trust in our application. The data saved should always be retrievable and transparent. As for threat modelling, each design idea is being looked at to try to find weaknesses that may impact our system. Everything should be designed to anticipate threats and prevent security risks.
 
 At last, the access control for users should be kept at the bare minimum. Each user should only get minimum access to perform the task needed. This is to prevent data breaches and improve data security.
 
-# Architecture
+## Architecture
 
 For architecture, it has been decided to use microservices for improved resilience and scalability. The microservices communicate with each other with MQTT API for real-time data exchange and lightweight protocol.
 
 To prevent system overloading, it has been decided to use AWS Elastic Load Balancing tool. It will not only improve event distribution but also prevent bottlenecks and system unresponsiveness.
 
-# Operation Concepts
+## Operation Concepts
 
 To keep the downtime as low as possible, everything should be monitored. The decision has fallen on the Nagios Monitoring system to monitor system health. It will be able to detect system failure, overload, or unresponsiveness. Furthermore, auto-scaling policies will be defined, so that each system does not need any manual work to scale if necessary.
 
