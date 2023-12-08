@@ -115,9 +115,23 @@ A table with quality goals and concrete scenarios, ordered by priorities
 
 <div class="formalpara-title">
 
+![level one Building Block View](images/technicalContext.png)
+
 **Contents**
 
 </div>
+
+| Component              | Description                                                                                              |
+|------------------------|----------------------------------------------------------------------------------------------------------|
+| **Web Server**         | The web server is responsible for handling HTTP requests and responses, serving as an API gateway.                |
+| **App Server 1,2** | Execute server-side application logic, handling the editing of our pictrues, and creating a connection to our AWS databases.                                   |
+| **Database**           | Central database where user data, images and filters are stored and retrieved.                                                       |
+| **Cache**              | We implemented a caching layer to increase our preformance speed. A more detailed expalanation is accesable in the point Deployment view.                |
+| **Backend**               | With microservices being our architecture and our platform being avalable for web, IOS and Andriod we used backend as a placeholder for the various programming languages.                                |
+| **Frontend**        |With microservices being our architecture and our platform being avalable for web, IOS and Andriod we used frontend as a placeholder for various Libraries, styling languages as well as formating elements.                                        |
+| **PostgreSQL**         |Is used as a relation database model. It not only is open source but also is compatable with AWS and is even offered as integrated service by Amazon (Amazon RDS (Relational Database Service))                                        
+| **External Service (Database)** | Represents an external service, such as AWS , facilitating seamless integration with Pixlr.                                           |
+
 
 Technical interfaces (channels and transmission media) linking your
 system to its environment. In addition a mapping of domain specific
