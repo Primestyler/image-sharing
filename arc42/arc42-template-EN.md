@@ -237,7 +237,12 @@ Our system consists of eight main groupings. The Editor is our main program whic
  **editor**
  
  The editor consists of 7 blocks of which 3 communicate with outer systems. these allow the editor to accept pictures, export them through uploads as well as customizing filters. 
+
+ <div style="text-align: center;"> 
+
  ![level two editor Building Block View](images/Builidng_Block_View_level_2_editor.png)
+
+ </div>
 
 1 Picture editing: consists of the user operating the tools inside the app and utilizing them to improve the images.
 
@@ -252,7 +257,7 @@ text onto images and filters. these can also be incorporated with location servi
 
 6 Remodelling tools: are used to customize images and filters and complete the image or filter to the specific users liking . Moreover they are combined with  User management to ensure users get the Filters they paid for.
 
-**level 2: picture**
+**Picture**
 
 ![level two editor Building Block View](images/layer2-picture.png)
 
@@ -263,6 +268,8 @@ text onto images and filters. these can also be incorporated with location servi
 3 Image converter: if the format doesnt match the needed format, it gets converted to png so it can be edited on our application.
 
 4 Filter Applicator: filters can be applied to the image when uploaded.
+
+**User Management**
 
 ![level two editor Building Block View](images/layer2-user-management.png)
 
@@ -624,8 +631,8 @@ documentation.
 |----------------------------|----------------------------------------------------------------|-------------------------------------------|
 | Database Size Unknown      | • In-House Database<br> • Online NoSQL Database                | Online NoSQL Database on AWS              |
 | Microservices Cost         | • Monolith<br> • Microservices<br> • SOA                       | Microservices                             |
-| Different Types of Data    | • Forcing Users to Use One Type<br> • Converting Images to a Standard Format | Converting Images to a Standard Format     |
 | Platform Scalability       | • Vertical Scaling<br> • Horizontal Scaling                    | Horizontal Scaling (to accommodate growth)|
+| Different Types of Data    | • Forcing Users to Use One Type<br> • Converting Images to a Standard Format | Converting Images to a Standard Format     |
 | User Authentication        | • OAuth<br> • JWT Tokens                                       | OAuth (for a secure and user-friendly experience)  |
 | Database Hosting           | • AWS<br> • Azure<br> • Google Cloud                           | AWS                                       |
 
