@@ -474,24 +474,38 @@ The deployment of the image-sharing app involves multiple components distributed
 
 ## Infrastructure Level 2
 
-Here you can include the internal structure of (some) infrastructure
-elements from level 1.
+![Server Nodes Diagram](https://github.com/Primestyler/image-sharing/blob/main/arc42/images/server_nodes.png?raw=true)
 
-Please copy the structure from level 1 for each selected element.
+## Internal Structure of Server Nodes
 
-### *\<Infrastructure Element 1>*
+### 1. Image Processing Module
 
-*\<diagram + explanation>*
+The Image Processing Module is a critical component within the Server Nodes responsible for handling image processing tasks. This module executes various operations on the uploaded images, such as resizing, cropping, or applying filters.
 
-### *\<Infrastructure Element 2>*
+### 2. Database Interaction Module
 
-*\<diagram + explanation>*
+The Database Interaction Module facilitates communication between the Server Nodes and the underlying database system. It is responsible for storing and retrieving data related to user accounts, uploaded images, and other relevant information. This module ensures seamless data transactions between the server and the persistent storage.
 
-…
+#### Connections:
 
-### *\<Infrastructure Element n>*
+- **Image Processing Module to Database Interaction Module:** Communication occurs to store or retrieve possibly processed images. For example, processed images may need to be stored for future reference or retrieved for further editing.
 
-*\<diagram + explanation>*
+### 3. Pixlr Integration Module
+
+The Pixlr Integration Module is an external component called by the Server Nodes. It enables the integration of Pixlr, a third-party editing tool. This module acts as a bridge between the Server Nodes and Pixlr, allowing users to access advanced editing tools for their images.
+
+### 4. Caching Management Module
+
+The Caching Management Module is responsible for optimizing data access by managing a cache. It stores frequently accessed data locally, reducing the need to fetch the same data repeatedly from the database. This module enhances performance by minimizing latency in data retrieval.
+
+#### Connections:
+
+- **Caching Management Module to Database Interaction Module:** The cache is updated or retrieved based on data changes in the underlying database.
+
+### 5. Monitoring Integration Module
+
+The Monitoring Integration Module plays a crucial role in maintaining the health and performance of the internal modules within the Server Nodes. It integrates with monitoring tools, such as Nagios, to track various metrics, detect anomalies, and generate alerts if issues arise.
+
 
 <div style="page-break-after: always;"></div>
 
