@@ -474,9 +474,9 @@ The deployment of the image-sharing app involves multiple components distributed
 
 ## Infrastructure Level 2
 
+## Internal Structure of Server Nodes
 ![Server Nodes Diagram](https://github.com/Primestyler/image-sharing/blob/main/arc42/images/server_nodes.png?raw=true)
 
-## Internal Structure of Server Nodes
 
 ### 1. Image Processing Module
 
@@ -506,8 +506,41 @@ The Caching Management Module is responsible for optimizing data access by manag
 
 The Monitoring Integration Module plays a crucial role in maintaining the health and performance of the internal modules within the Server Nodes. It integrates with monitoring tools, such as Nagios, to track various metrics, detect anomalies, and generate alerts if issues arise.
 
+## Internal Structure of AWS databases
+![Database Diagram](https://github.com/Primestyler/image-sharing/blob/main/arc42/images/aws_databases.png?raw=true)
+
+
+1. **Data Storage Module:**
+   - Responsible for storing and retrieving data.
+   - Connected to the Query Optimization Module to enhance data retrieval efficiency.
+
+2. **Query Optimization Module:**
+   - Enhances the efficiency of database queries.
+   - Receives input from the Data Storage, Backup and Recovery, and Security and Access Control Modules.
+
+3. **Backup and Recovery Module:**
+   - Manages backup and recovery processes for data resilience.
+   - Collaborates with the Query Optimization Module to ensure optimal recovery strategies.
+
+4. **Security and Access Control Module:**
+   - Implements security measures and access control for database protection.
+   - Integrates with the Query Optimization Module to enhance secure data access.
+     
+## Internal Structure of Load Balancer
+![Database Diagram](https://github.com/Primestyler/image-sharing/blob/main/arc42/images/load_balancer.png?raw=true)
+
+
+1. **Load Balancing Algorithm:**
+   - Utilizes the Round Robin algorithm to distribute incoming requests.
+   - Influences the Request Distribution Module's decision-making.
+
+2. **Request Distribution Module:**
+   - Executes the load balancing algorithm.
+   - Distributes requests to the appropriate Server Nodes based on algorithmic decisions.
+
 
 <div style="page-break-after: always;"></div>
+
 
 # Cross-cutting Concepts
 
