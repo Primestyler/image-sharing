@@ -8,6 +8,76 @@ concepts. For documentation of your own system you use better the
 
 </div>
 
+
+<div style="page-break-after: always;"></div>
+
+
+
+# Fancygram Documentation - arc42
+
+---
+
+*Version 9.2*
+
+*Date: 12.12.2023*
+
+---
+
+<!-- Centered Image Placeholder -->
+<p align="center">
+  <img src="../image/arc42-logo.png" alt="Fancygram Logo" width="200"/>
+</p>
+
+---
+
+## Team
+
+- Lin Hao
+- Hickelsberger
+- Kalarickal Dominic
+
+---
+<div style="page-break-after: always;"></div>
+
+
+# Table of Contents
+
+1. [Introduction and Goals](#introduction-and-goals)
+   - [Requirements Overview](#requirements-overview)
+   - [Quality Goals](#quality-goals)
+   - [Stakeholders](#stakeholders)
+2. [Architecture Constraints](#architecture-constraints)
+   - [Technical Constraints](#technical-constraints)
+   - [Organizational Constraints](#organizational-constraints)
+3. [System Scope and Context](#system-scope-and-context)
+   - [Business Context](#business-context)
+   - [Technical Context](#technical-context)
+4. [Solution Strategy](#solution-strategy)
+5. [Building Block View](#building-block-view)
+   - [Level 1](#level-1)
+   - [Level 2](#level-2)
+   - [Level 3](#level-3)
+6. [Runtime View](#runtime-view)
+   - [Runtime Scenario 1](#runtime-scenario-1)
+   - [User Initiates Image Share](#user-initiates-image-share)
+7. [Deployment View](#deployment-view)
+   - [Infrastructure Level 1](#infrastructure-level-1)
+   - [Infrastructure Level 2](#infrastructure-level-2)
+8. [Cross-cutting Concepts](#cross-cutting-concepts)
+   - [Security and Safety](#security-and-safety)
+   - [Architecture](#architecture)
+   - [Operation Concepts](#operation-concepts)
+9. [Architecture Decisions](#architecture-decisions)
+   - [Architecture Decision Table](#architecture-decision-table)
+10. [Quality Requirements](#quality-requirements)
+       - [Quality Tree](#quality-tree)
+       - [Quality Scenarios](#quality-scenarios)
+11. [Risks and Technical Debts](#risks-and-technical-debts)
+12. [Glossary](#glossary)
+
+
+
+
 <div style="page-break-after: always;"></div>
 
 # Introduction and Goals
@@ -49,7 +119,6 @@ To ensure that every stakeholder is satisfied Fancygram will meet the requiremen
 <div class="formalpara-title">
 </div>
 
-A table with quality goals and concrete scenarios, ordered by priorities
 
 ## Stakeholders
 
@@ -143,21 +212,21 @@ Our system consists of eight main groupings. The Editor is our main program whic
 
 ![level one Building Block View](images/Builidng_Block_View_levele_1.png)
  
- 1 uploads: are responsible for distributing our edited images to outer systems. It can stand alone and be used to upload different files to other platforms if utilized for a different sales point. 
+ 1. uploads: are responsible for distributing our edited images to outer systems. It can stand alone and be used to upload different files to other platforms if utilized for a different sales point. 
 
- 2 payment: controls the flow of money in our company. Moreover it also regulates which content is permitted to specific users, by passing on order confirmations to the user management. 
+ 2. payment: controls the flow of money in our company. Moreover it also regulates which content is permitted to specific users, by passing on order confirmations to the user management. 
  
- 3 User management: transfers user data to the editor to permit certain features. Moreover this Block handles the users and allows them to log in and sign up and manage their accounts. This can also be done by system administrators
+ 3. User management: transfers user data to the editor to permit certain features. Moreover this Block handles the users and allows them to log in and sign up and manage their accounts. This can also be done by system administrators
 
- 4 Location: is used to accurately portray the current location of the users in images (if they want to and allow the function) so that they can share it to their community and show it as a sign of status. Moreover it helps customize certian features and filters for countries as well as language settings. This can however be disabled within the users device.
+ 4. Location: is used to accurately portray the current location of the users in images (if they want to and allow the function) so that they can share it to their community and show it as a sign of status. Moreover it helps customize certian features and filters for countries as well as language settings. This can however be disabled within the users device.
 
-5 File storage system AWS: is used to store filters, pictures and data.  this cooperates with user management and the editor aswell as the filters supplied and stored by pixlr. 
+5. File storage system AWS: is used to store filters, pictures and data.  this cooperates with user management and the editor aswell as the filters supplied and stored by pixlr. 
 
-6 Filters: are responsible for allowing users to saave and expand filters created by the editing tool and linking them to the Filters from Pixlr.
+6. Filters: are responsible for allowing users to saave and expand filters created by the editing tool and linking them to the Filters from Pixlr.
  
-7 Editor: This component is the heart of our System. It can be used to modify images and filters aswell as layer these. 
+7. Editor: This component is the heart of our System. It can be used to modify images and filters aswell as layer these. 
 
-8 Pictures: is used to check image formats and convert them in case of not accesped formats. Moever this block allows user to apply filters while taking pictures.
+8. Pictures: is used to check image formats and convert them in case of not accesped formats. Moever this block allows user to apply filters while taking pictures.
 
 **Level 2** 
 
@@ -581,38 +650,25 @@ arc42 documentation.
 
 # Glossary
 
-<div class="formalpara-title">
-
-**Contents**
-
-</div>
-
-The most important domain and technical terms that your stakeholders use
-when discussing the system.
-
-You can also see the glossary as source for translations if you work in
-multi-language teams.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-You should clearly define your terms, so that all stakeholders
-
--   have an identical understanding of these terms
-
--   do not use synonyms and homonyms
-
-A table with columns \<Term> and \<Definition>.
-
-Potentially more columns in case you need translations.
-
-See [Glossary](https://docs.arc42.org/section-12/) in the arc42
-documentation.
-
-| Term        | Definition        |
-|-------------|-------------------|
-| *\<Term-1>* | *\<definition-1>* |
-| *\<Term-2>* | *\<definition-2>* |
+| Term                   | Definition                                                                               |
+|------------------------|------------------------------------------------------------------------------------------|
+| Fancygram              | Social Media Platform for sharing and editing images.                                    |
+| Microservices          | Architectural style where an app is built as independent, small services.                |
+| AWS                    | Amazon Web Services, a cloud platform providing various services.                        |
+| Pixlr                  | Third-party image editing service integrated into Fancygram.                             |
+| EU GDPR                | Data protection rules and regulations in the European Union.                             |
+| Nagios                 | Monitoring system for overseeing system health and performance.                          |
+| Continuous Integration | Development practice automating code building, testing, and integration.                 |
+| OAuth                  | Authentication protocol securing user data and permissions.                              |
+| JWT Tokens             | Compact, secure tokens for transferring claims between parties.                          |
+| Horizontal Scaling     | Increasing capacity by connecting multiple entities to work as a single unit.            |
+| Query Optimization     | Improving efficiency and performance of database queries.                                |
+| Load Balancer          | Distributes incoming network traffic across multiple servers.                            |
+| Caching Layer          | Mechanism storing frequently accessed data, reducing database fetches.                   |
+| Monolith               | Single-tiered software application with tightly integrated components.                   |
+| SOA                    | Service-Oriented Architecture, where components communicate as services.                 |
+| Vertical Scaling       | Increasing capacity by adding resources to a single entity.                              |
+| Third-Party Service    | External service or API integrated into Fancygram for added functionality.               |
+| Technical Obsolescence | State of being outdated or no longer in use due to technology advancements.              |
+| Continuous Deployment  | Extension of continuous integration, automatically deploying code changes to production. |
+| Fallback Options       | Alternative strategies or paths used when the primary option encounters.                 |
