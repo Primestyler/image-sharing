@@ -285,64 +285,13 @@ stores locations with timestamps in near realtime and provides access to locatio
 ![Runtime View](https://github.com/Primestyler/image-sharing/blob/main/arc42/images/Runtime_View2.png?raw=true)
 
 
-### User Initiates Image Share:
-
-- The interaction begins with the User selecting the "Share" option in the app.
-- This represents a user action, indicating the intent to share an image.
-
-### Server/Editor Provides Social Media Options:
-
-- The Server/Editor responds by providing a list of social media platforms available for image sharing.
-
-### User Selects Social Media Platform:
-
-- The User selects a specific social media platform from the provided options.
-- This choice determines where the image will be shared.
-
-### Server Checks User's Login Status:
-
-- The Server/Editor checks if the User is currently logged in to the selected social media platform.
-- This verification is crucial for seamless integration with the chosen platform.
-
-### Social Media API Validates Login Status:
-
-- The Server/Editor sends a request to the Social Media API to validate the User's login status.
-- The Social Media API responds with the confirmation of the User's login status.
-
-### User Login Loop:
-
-- If the User is not logged in, a loop is initiated to handle the login process.
-  - The Server/Editor sends login information to the User.
-  - The User provides login credentials.
-  - The User's login data is sent to the Social Media API for validation.
-  - The validation result is relayed back to the Server/Editor.
-  - The loop continues until the User is successfully logged in.
-
-### User Requests Image Share:
-
-- After the login process, the User informs the Server/Editor about the intent to share an image.
-- This triggers a request from the Server/Editor to the Image Storage/AWS for the selected image.
-
-### Image Retrieval from Image Storage/AWS:
-
-- The Image Storage/AWS responds by providing the requested image to the Server/Editor.
-- This ensures that the Server/Editor has access to the image for further processing.
-
-### Image Format Conversion:
-
-- The Server/Editor sends the image to the Image Converter for format conversion.
-- The Image Converter processes the image and returns the formatted version to the Server/Editor.
-
-### Image Share to Social Media:
-
-- The Server/Editor sends the formatted image to the Social Media API for sharing on the selected platform.
-- The Social Media API acknowledges the successful image share.
-
-### Confirmation to User:
-
-- The Server/Editor sends a confirmation message to the User, indicating that the image has been successfully shared.
-
-
+1. The process begins with the users' intention to share an image.
+2. The Server/Editor provides the user a list of possible social media platforms to share the image.
+3. The user selects one of these platforms. Then the Server/Editor asks the Social Media Api if the user is currently logged in into the specific platform.
+4. If the user is not logged in then a loop is startded, where the user inputs his login credentials to the Server. This specific data is then sent to the Social Media API, which returns the validation. The loop is only stopped if the user is logged in.
+5. After the login process, the user requests the image from the database and the image format from the Image Converter.
+6. Subsequently, the Server transmits the image to the Social Media API, where the successful sharing is acknowledged.
+7. Finally, the server notificies the user about the successful share.
 
 <div style="page-break-after: always;"></div>
 
