@@ -1,14 +1,3 @@
-# 
-
-**About arc42**
-
-arc42, the template for documentation of software and system
-architecture.
-
-Template Version 8.2 EN. (based upon AsciiDoc version), January 2023
-
-Created, maintained and © by Dr. Peter Hruschka, Dr. Gernot Starke and
-contributors. See <https://arc42.org>.
 
 <div class="note">
 
@@ -36,7 +25,7 @@ Fancygram is a specialized platform crafted with the primary goal of empowering 
 |---------------------------------------|------------------------------------------------------------------------------------------|
 | Photo Editing with Advanced Tools | Users creatively modify images using an array of advanced editing tools.                 |
 | Image Sharing and Sorting          | Users upload, organize, and share their images, creating personalized galleries.         |
-| User Connections*                  | Users engage in conversations, collaborate on projects, and connect with like-minded individuals. |
+| Export to other social media                  |Users can export images to various external social media platforms to share their masterpieces. |
 | Share Editing Tips and Techniques | Users exchange insights, techniques, and tutorials, fostering a culture of learning.        |
 | Challenges and Competitions       | Users create and participate in challenges, adding a gamified layer to the platform.      |
 
@@ -102,20 +91,20 @@ A table with quality goals and concrete scenarios, ordered by priorities
 ### Buisness Context
 ![image](https://github.com/Primestyler/image-sharing/assets/127980400/12221d3e-08cf-4863-8c23-88d58a6a1659)
 
-| **User/System**  | **Description**                              | **Input**                                    | **Output**                                      |
-|------------------|----------------------------------------------|----------------------------------------------|-------------------------------------------------|
-| User             | The user interacting with Fancygram          | Uploads images                               | View edited images                              |
-| Fancygram        | The image sharing app                        | Receives image uploads                       | Processes and stores images                     |
-| AWS              | Cloud storage service                        | Receives images from Fancygram               | Stores and retrieves images in the cloud        |
-| Pixlr            | Image editing service providing filters      | Receives images from Fancygram for filtering | Returns edited images with applied filers       |
-| Social Media     | User are connected on social media           | Shares edited images from fancygram          | Displays shared images on respective platforms  |
-| Filters Database | Database storing custom and pre-made filters | Retrieves filters for image editing          | Stores and updates filters for future use       |
+| User/System      | Description                                  | Input                               | Output                                                 |
+|------------------|----------------------------------------------|-------------------------------------|--------------------------------------------------------|
+| User             | The user interacting with Fancygram          |                                     |                                                        |
+| Fancygram        | The image sharing app                        | Receives image uploads              | Edited images and storage of edited images             |
+| AWS              | Cloud storage service                        | Server request                      | Stores and retrieves images and user data in the cloud |
+| Pixlr            | Image editing service providing filters      | Receives filter request             | Provides Filter                                        |
+| Social Media     | User are connected on social media           | Edited images from fancygram        | Displays shared images on respective platforms         |
+| Filters Database | Database storing custom and pre-made filters | Retrieves filters for image editing | Stores and updates filters for future use              |
 
 ## Technical Context
 
 <div class="formalpara-title">
 
-![level one Building Block View](images/technicalContext.png)
+![Technical Context](images/technicalContext.png)
 
 **Contents**
 
@@ -124,46 +113,14 @@ A table with quality goals and concrete scenarios, ordered by priorities
 | Component                   | Description                                                                                                                                                                                                  | Input                          | output                                  |
 |-----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|-----------------------------------------|
 | Web Server                  | The web server is responsible for handling HTTP requests and responses, serving as an API gateway.                                                                                                           | http requests                  | http response with requested data       |
-| App Server 1,2              | Execute server-side application logic, handling the editing of our pictrues, and creating a connection to our AWS databases.                                                                                 | Request from Web Server        | Response of processed request           |
+| App Server 1,2              | Execute server-side application logic, handling the editing of our pictures, and creating a connection to our AWS databases.                                                                                 | Request from Web Server        | Response of processed request           |
 | Database                    | Central database where user data, images and filters are stored and retrieved.                                                                                                                               | SQL commands and/or Data       | Data                                    |
-| Cache                       | We implemented a caching layer to increase our preformance speed. A more detailed expalanation is accesable in the point Deployment view.                                                                    | Data                           | cached Data or messages related to data |
-| Backend                     | With microservices being our architecture and our platform being avalable for web, IOS and Andriod we used backend as a placeholder for the various programming languages.                                   |                                |                                         |
-| Frontend                    | With microservices being our architecture and our platform being avalable for web, IOS and Andriod we used frontend as a placeholder for various Libraries, styling languages as well as formating elements. | user interactions              | update page                             |
-| PostgreSQL                  | Is used as a relation database model. It not only is open source but also is compatable with AWS and is even offered as integrated service by Amazon (Amazon RDS (Relational Database Service))              | comands                        | data                                    |
+| Cache                       | We implemented a caching layer to increase our performance speed. A more detailed explanation is accessible in the point Deployment view.                                                                    | Data                           | cached Data or messages related to data |
+| Backend                     | With microservices being our architecture and our platform being available for web, IOS and Android we used backend as a placeholder for the various programming languages.                                   | service request                               |  server answer                                       |
+| Frontend                    | With microservices being our architecture and our platform being available for web, IOS and Android we used frontend as a placeholder for various Libraries, styling languages as well as formatting elements. | user interactions              | update page                             |
+| PostgreSQL                  | Is used as a relation database model. It not only is open source but also is compatible with AWS and is even offered as integrated service by Amazon (Amazon RDS (Relational Database Service))              | commands                        | data                                    |
 | External Service (Database) | Represents an external service, such as AWS , facilitating seamless integration with Pixlr.                                                                                                                  | requests from front or backend | Filters                                 |
 
-
-
-Technical interfaces (channels and transmission media) linking your
-system to its environment. In addition a mapping of domain specific
-input/output to the channels, i.e. an explanation which I/O uses which
-channel.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-Many stakeholders make architectural decision based on the technical
-interfaces between the system and its context. Especially infrastructure
-or hardware designers decide these technical interfaces.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-E.g. UML deployment diagram describing channels to neighboring systems,
-together with a mapping table showing the relationships between channels
-and input/output.
-
-**\<Diagram or Table>**
-
-**\<optionally: Explanation of technical interfaces>**
-
-**\<Mapping Input/Output to Channels>**
 
 <div style="page-break-after: always;"></div>
 
@@ -190,43 +147,6 @@ We've also made important decisions about the technology we use. We chose AWS fo
 
 # Building Block View
 
-<div class="formalpara-title">
-
-**Content**
-
-</div>
-
-The building block view shows the static decomposition of the system
-into building blocks (modules, components, subsystems, classes,
-interfaces, packages, libraries, frameworks, layers, partitions, tiers,
-functions, macros, operations, data structures, …) as well as their
-dependencies (relationships, associations, …)
-
-This view is mandatory for every architecture documentation. In analogy
-to a house this is the *floor plan*.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-Maintain an overview of your source code by making its structure
-understandable through abstraction.
-
-This allows you to communicate with your stakeholder on an abstract
-level without disclosing implementation details.
-
-<div class="formalpara-title">
-
-**Building Block View**
-
-
-
-</div>
-
-**Whitebox view**
-    
 **Level 1**
 
 Our system consists of eight main groupings. The Editor is our main program which is our company developed. The other Block interact with outer systems to provide information to our editing tool. As portrayed in the diagram bellow these consist of an upload to various social media platforms, a cloud storage system , a payment option as well as location services    
@@ -247,9 +167,11 @@ Our system consists of eight main groupings. The Editor is our main program whic
  
 7 Editor: This component is the heart of our System. It can be used to modify images and filters aswell as layer these. 
 
+8 Pictures: is used to check image formats and convert them in case of not accesped formats. Moever this block allows user to apply filters while taking pictures.
+
 **Level 2** 
 
- **editor**
+ **Editor**
  
  The editor consists of 7 blocks of which 3 communicate with outer systems. these allow the editor to accept pictures, export them through uploads as well as customizing filters. 
 
@@ -270,9 +192,13 @@ Our system consists of eight main groupings. The Editor is our main program whic
 5 Text tools: consist of all different elements used to output
 text onto images and filters. these can also be incorporated with location services to accurately portray locations and situations.
 
-6 Remodelling tools: are used to customize images and filters and complete the image or filter to the specific users liking . Moreover they are combined with  User management to ensure users get the Filters they paid for.
+6 Customized filters: allows the user to use various editing tools to create new filters as well as layer different existing filters.
+
+7 Export: This block prepares edited images to be shared to various social media sites.
 
 **Picture**
+
+This component deals with the upload of images to our app/ page. This also includes applying filters to certain images in the upload as well as a format conversion.
 
 ![level two editor Building Block View](images/layer2-picture.png)
 
@@ -286,6 +212,8 @@ text onto images and filters. these can also be incorporated with location servi
 
 **User Management**
 
+User management includes the transfers of user data to the editor to permit certain features. Moreover this Block handles the users and allows them to log in and sign up as well as manage their accounts. This can also be done by system administrators.
+
 ![level two editor Building Block View](images/layer2-user-management.png)
 
 1 Data saver: Controlls the data of the user and the inputs while registering. they then can be processed and stored to a database.
@@ -294,7 +222,7 @@ text onto images and filters. these can also be incorporated with location servi
 
 3 account permission: The value if a payment has occured from this account is revieced from the financial division and then the permsissions can be passed on to the editor. Furthermore this also entails the oportunity to advertise and add the posiblity of further payments to this account.
 
-**locations** 
+**Locations** 
 
 stores locations with timestamps in near realtime and provides access to locations for the last 30 minutes
 
@@ -313,6 +241,8 @@ stores locations with timestamps in near realtime and provides access to locatio
 
 
 **Level 3** 
+
+**Editor-Remodeling Tools**
 
 ![level three editor Building Block View](images/Builidng_Block_View_level_3_remodelingtools.png)
 
