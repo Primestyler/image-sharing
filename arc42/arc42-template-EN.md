@@ -1,4 +1,8 @@
 
+<p align="center">
+  <img src="https://github.com/Primestyler/image-sharing/blob/main/arc42/images/arc42-logo.png" alt="Fancygram Logo" width="200"/>
+</p>
+
 <div class="note">
 
 This version of the template contains some help and explanations. It is
@@ -20,13 +24,6 @@ concepts. For documentation of your own system you use better the
 *Version 9.2*
 
 *Date: 12.12.2023*
-
----
-
-<!-- Centered Image Placeholder -->
-<p align="center">
-  <img src="https://github.com/Primestyler/image-sharing/blob/main/arc42/images/arc42-logo.png" alt="Fancygram Logo" width="200"/>
-</p>
 
 ---
 
@@ -212,21 +209,21 @@ Our system consists of eight main groupings. The Editor is our main program whic
 
 ![level one Building Block View](images/Builidng_Block_View_levele_1.png)
  
- 1. uploads: are responsible for distributing our edited images to outer systems. It can stand alone and be used to upload different files to other platforms if utilized for a different sales point. 
+ 1. **uploads**: are responsible for distributing our edited images to outer systems. It can stand alone and be used to upload different files to other platforms if utilized for a different sales point. 
 
- 2. payment: controls the flow of money in our company. Moreover it also regulates which content is permitted to specific users, by passing on order confirmations to the user management. 
+ 2. **payment**: controls the flow of money in our company. Moreover it also regulates which content is permitted to specific users, by passing on order confirmations to the user management. 
  
- 3. User management: transfers user data to the editor to permit certain features. Moreover this Block handles the users and allows them to log in and sign up and manage their accounts. This can also be done by system administrators
+ 3. **User management**: transfers user data to the editor to permit certain features. Moreover this Block handles the users and allows them to log in and sign up and manage their accounts. This can also be done by system administrators
 
- 4. Location: is used to accurately portray the current location of the users in images (if they want to and allow the function) so that they can share it to their community and show it as a sign of status. Moreover it helps customize certian features and filters for countries as well as language settings. This can however be disabled within the users device.
+ 4. **Location**: is used to accurately portray the current location of the users in images (if they want to and allow the function) so that they can share it to their community and show it as a sign of status. Moreover it helps customize certian features and filters for countries as well as language settings. This can however be disabled within the users device.
 
-5. File storage system AWS: is used to store filters, pictures and data.  this cooperates with user management and the editor aswell as the filters supplied and stored by pixlr. 
+5. **File storage system AWS**: is used to store filters, pictures and data.  this cooperates with user management and the editor aswell as the filters supplied and stored by pixlr. 
 
-6. Filters: are responsible for allowing users to saave and expand filters created by the editing tool and linking them to the Filters from Pixlr.
+6. **Filters**: are responsible for allowing users to saave and expand filters created by the editing tool and linking them to the Filters from Pixlr.
  
-7. Editor: This component is the heart of our System. It can be used to modify images and filters aswell as layer these. 
+7. **Editor**: This component is the heart of our System. It can be used to modify images and filters aswell as layer these. 
 
-8. Pictures: is used to check image formats and convert them in case of not accesped formats. Moever this block allows user to apply filters while taking pictures.
+8. **Pictures**: is used to check image formats and convert them in case of not accesped formats. Moever this block allows user to apply filters while taking pictures.
 
 **Level 2** 
 
@@ -240,20 +237,20 @@ Our system consists of eight main groupings. The Editor is our main program whic
 
  </div>
 
-1 Picture editing: consists of the user operating the tools inside the app and utilizing them to improve the images.
+1. **Picture editing**: consists of the user operating the tools inside the app and utilizing them to improve the images.
 
-2 Remodelling tools: provides the necessary tools to customise images as well as filters to improve them to the specific needs of the user
+2. **Remodelling tools**: provides the necessary tools to customise images as well as filters to improve them to the specific needs of the user
 
-3 Layer management: allows the user to apply more than one filter onto images or even layer filters over each other to create a new one. This can also be restricted due to free and premium user imbalance.
+3. **Layer management**: allows the user to apply more than one filter onto images or even layer filters over each other to create a new one. This can also be restricted due to free and premium user imbalance.
 
-4 Effects and filters: contain the already created filters with certain effects which have already been created. This includes already layered effects.
+4. **Effects and filters**: contain the already created filters with certain effects which have already been created. This includes already layered effects.
 
-5 Text tools: consist of all different elements used to output
+5. **Text tools**: consist of all different elements used to output
 text onto images and filters. these can also be incorporated with location services to accurately portray locations and situations.
 
-6 Customized filters: allows the user to use various editing tools to create new filters as well as layer different existing filters.
+6. **Customized filters**: allows the user to use various editing tools to create new filters as well as layer different existing filters.
 
-7 Export: This block prepares edited images to be shared to various social media sites.
+7. **Export**: This block prepares edited images to be shared to various social media sites.
 
 **Picture**
 
@@ -261,13 +258,13 @@ This component deals with the upload of images to our app/ page. This also inclu
 
 ![level two editor Building Block View](images/layer2-picture.png)
 
-1 Virus checker: check if the file is not corupted and all data still works.
+1. **Virus checker**: check if the file is not corupted and all data still works.
 
-2 Format checker: check format to ensure it can be handeld from our system.
+2. **Format checker**: check format to ensure it can be handeld from our system.
 
-3 Image converter: if the format doesnt match the needed format, it gets converted to png so it can be edited on our application.
+3. **Image converter**: if the format doesnt match the needed format, it gets converted to png so it can be edited on our application.
 
-4 Filter Applicator: filters can be applied to the image when uploaded.
+4. **Filter Applicator**: filters can be applied to the image when uploaded.
 
 **User Management**
 
@@ -275,11 +272,11 @@ User management includes the transfers of user data to the editor to permit cert
 
 ![level two editor Building Block View](images/layer2-user-management.png)
 
-1 Data saver: Controlls the data of the user and the inputs while registering. they then can be processed and stored to a database.
+1. **Data saver**: Controlls the data of the user and the inputs while registering. they then can be processed and stored to a database.
 
-2 Data revison: entered data can be revised and changed. The changed values of course get validated again and then stored in the database
+2. **Data revison**: entered data can be revised and changed. The changed values of course get validated again and then stored in the database
 
-3 account permission: The value if a payment has occured from this account is revieced from the financial division and then the permsissions can be passed on to the editor. Furthermore this also entails the oportunity to advertise and add the posiblity of further payments to this account.
+3. **account permission**: The value if a payment has occured from this account is revieced from the financial division and then the permsissions can be passed on to the editor. Furthermore this also entails the oportunity to advertise and add the posiblity of further payments to this account.
 
 **Locations** 
 
@@ -288,15 +285,15 @@ stores locations with timestamps in near realtime and provides access to locatio
 ![level two editor Building Block View](images/layer2-location.png)
 
 
-1 LocationController: manages the current locations needed for the app to post them on your images.
+1. **LocationController**: manages the current locations needed for the app to post them on your images.
 
-2 LocationMessaging: this allows users transfer thier real time locations so that the app can present other users who are in their proximity.
+2. **LocationMessaging**: this allows users transfer thier real time locations so that the app can present other users who are in their proximity.
 
-3 LocationsListener: Gets the timezones aswell as the current time at the specified location.
+3. **LocationsListener**: Gets the timezones aswell as the current time at the specified location.
 
-4 LocationService: retrieve current coordinates of the user to accurately display them on the app allowing them to interact with users nearby as well as displaying it on their profile.
+4. **LocationService**: retrieve current coordinates of the user to accurately display them on the app allowing them to interact with users nearby as well as displaying it on their profile.
 
-5 LocationRepository: stores locations of the past 30 min so that they can be used by the user for socialising with other users.
+5. **LocationRepository**: stores locations of the past 30 min so that they can be used by the user for socialising with other users.
 
 
 **Level 3** 
@@ -305,11 +302,11 @@ stores locations with timestamps in near realtime and provides access to locatio
 
 ![level three editor Building Block View](images/Builidng_Block_View_level_3_remodelingtools.png)
 
-1 Artistic effects: are different images, emojis, gifs and tools which can be used to style and improve images and filters.
+1. **Artistic effects**: are different images, emojis, gifs and tools which can be used to style and improve images and filters.
 
-2 Filter effects: are applied to images or layered over other filters to create a new style of an image or a new filter.
+2. **Filter effects**: are applied to images or layered over other filters to create a new style of an image or a new filter.
 
-3 colour corrections effects: are used to correct or improve contrasts of light or colours to make it more appealing for the user.
+3. **colour corrections effects**: are used to correct or improve contrasts of light or colours to make it more appealing for the user.
 
 <div style="page-break-after: always;"></div>
 
