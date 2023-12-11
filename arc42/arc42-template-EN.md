@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="https://github.com/Primestyler/image-sharing/blob/main/arc42/images/arc42-logo.png" alt="Fancygram Logo" width="200"/>
+  <img src="https://github.com/Primestyler/image-sharing/blob/main/arc42/images/arc42-logo.png" alt="Fancygram Logo" width="300"/>
 </p>
 
 <div class="note">
@@ -21,7 +21,7 @@ concepts. For documentation of your own system you use better the
 
 ---
 <p align="center">
-  <img src="https://github.com/Primestyler/image-sharing/blob/main/arc42/images/fancy-logo.png" alt="Fancygram Logo" width="200"/>
+  <img src="https://github.com/Primestyler/image-sharing/blob/main/arc42/images/fancy-logo.png" alt="Fancygram Logo" width="400"/>
 </p>
 
 *Version 9.2*
