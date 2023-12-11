@@ -20,6 +20,9 @@ concepts. For documentation of your own system you use better the
 # Fancygram Documentation - arc42
 
 ---
+<p align="center">
+  <img src="[https://github.com/Primestyler/image-sharing/blob/main/arc42/images/arc42-logo.png](https://github.com/Primestyler/image-sharing/blob/Test-von-Hao/arc42/images/fancy-logo.png)" alt="Fancygram Logo" width="200"/>
+</p>
 
 *Version 9.2*
 
