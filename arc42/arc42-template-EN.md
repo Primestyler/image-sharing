@@ -141,7 +141,11 @@ To ensure that every stakeholder is satisfied Fancygram will meet the requiremen
 <div class="formalpara-title">
     
 ### Buisness Context
+ <div style="text-align: center;"> 
+
 ![image](https://github.com/Primestyler/image-sharing/assets/127980400/12221d3e-08cf-4863-8c23-88d58a6a1659)
+</div>
+
 
 | User/System      | Description                                  | Input                               | Output                                                 |
 |------------------|----------------------------------------------|-------------------------------------|--------------------------------------------------------|
@@ -155,8 +159,10 @@ To ensure that every stakeholder is satisfied Fancygram will meet the requiremen
 ## Technical Context
 
 <div class="formalpara-title">
+ <div style="text-align: center;"> 
 
 ![Technical Context](images/technicalContext.png)
+</div>
 
 **Contents**
 
@@ -189,8 +195,10 @@ Moreover, we have addressed some big concerns and questions raised on the techno
 **Level 1**
 
 Our system consists of eight main groupings. The Editor is our main program which is our company developed. The other Block interact with outer systems to provide information to our editing tool. As portrayed in the diagram bellow these consist of an upload to various social media platforms, a cloud storage system , a payment option as well as location services    
+ <div style="text-align: center;"> 
 
 ![level one Building Block View](images/Builidng_Block_View_levele_1.png)
+ </div>
  
  1. **uploads**: are responsible for distributing our edited images to outer systems. It can stand alone and be used to upload different files to other platforms if utilized for a different sales point. 
 
@@ -239,7 +247,10 @@ text onto images and filters. these can also be incorporated with location servi
 
 This component deals with the upload of images to our app/ page. This also includes applying filters to certain images in the upload as well as a format conversion.
 
+ <div style="text-align: center;"> 
+
 ![level two editor Building Block View](images/layer2-picture.png)
+</div>
 
 1. **Virus checker**: check if the file is not corupted and all data still works.
 
@@ -253,7 +264,10 @@ This component deals with the upload of images to our app/ page. This also inclu
 
 User management includes the transfers of user data to the editor to permit certain features. Moreover this Block handles the users and allows them to log in and sign up as well as manage their accounts. This can also be done by system administrators.
 
+ <div style="text-align: center;"> 
+
 ![level two editor Building Block View](images/layer2-user-management.png)
+</div>
 
 1. **Data saver**: Controlls the data of the user and the inputs while registering. they then can be processed and stored to a database.
 
@@ -265,8 +279,11 @@ User management includes the transfers of user data to the editor to permit cert
 
 stores locations with timestamps in near realtime and provides access to locations for the last 30 minutes
 
+ <div style="text-align: center;"> 
+
 ![level two editor Building Block View](images/layer2-location.png)
 
+</div>
 
 1. **LocationController**: manages the current locations needed for the app to post them on your images.
 
@@ -283,7 +300,10 @@ stores locations with timestamps in near realtime and provides access to locatio
 
 **Editor-Remodeling Tools**
 
+ <div style="text-align: center;"> 
+
 ![level three editor Building Block View](images/Builidng_Block_View_level_3_remodelingtools.png)
+</div>
 
 1. **Artistic effects**: are different images, emojis, gifs and tools which can be used to style and improve images and filters.
 
@@ -299,40 +319,25 @@ stores locations with timestamps in near realtime and provides access to locatio
 
 ## Runtime Scenario 1
 
+ <div style="text-align: center;"> 
+
 ![image](https://github.com/Primestyler/image-sharing/assets/127980400/5dc2908c-219a-41db-9ba6-b5ee2537c0d7)
 
-### User Image Upload:
+</div>
 
-- The interaction begins with the User uploading an image to the Server/Editor.
-- This represents a straightforward user action, initiating the image editing process.
-
-### Permission Request to User Management:
-
-- After receiving the image, the Server/Editor requests permission from the User Management building block.
-- This step ensures that the user has the necessary permissions to access the editing tools.
-
-### Editing Tools Request to Editing Tools Database:
-
-- Upon obtaining permission, the Server/Editor requests the available editing tools from the Editing Tools Database.
-- This interaction signifies the dynamic nature of the application, where the available tools may vary based on user permissions.
-
-### Conditional Retrieval of Editing Tools:
-
-- The Editing Tools Database responds differently based on the user's subscription status.
-  - If the user has a paid version, all available editing tools are returned.
-  - If the user has a free version, a limited set of editing tools is returned.
-
-### Editing Tools Confirmation to User:
-
-- The Server/Editor sends a confirmation message to the User, informing them about the editing tools they have access to.
-- This confirmation is a crucial aspect of user communication, providing clarity on available features.
-
-
+1. The process starts with the user uploading an image to our server so that they  can start editing it.
+2. the server then requests information of the user regarding their clearance level to enable certain tools for the user.
+3. With that information the editing tools are retrieved.
+4. Depending on the access the user has they then get certain features which enable them to edit their image.
+5. These tools are then returned to the user.
 
 ## Runtime Scenario: Image Sharing
 
+ <div style="text-align: center;"> 
+
 ![Runtime View](https://github.com/Primestyler/image-sharing/blob/main/arc42/images/Runtime_View2.png?raw=true)
 
+</div>
 
 1. The process begins with the users' intention to share an image.
 2. The Server/Editor provides the user a list of possible social media platforms to share the image.
@@ -355,7 +360,10 @@ stores locations with timestamps in near realtime and provides access to locatio
 
 ## Infrastructure Level 1
 
+ <div style="text-align: center;"> 
+
 ![Deployment Diagram](https://github.com/Primestyler/image-sharing/blob/main/arc42/images/deployment_diagram.png?raw=true)
+</div>
 
 
 
@@ -403,7 +411,10 @@ The deployment of the image-sharing app involves multiple components distributed
 ## Infrastructure Level 2
 
 ## Internal Structure of Server Nodes
+ <div style="text-align: center;"> 
+
 ![Server Nodes Diagram](https://github.com/Primestyler/image-sharing/blob/main/arc42/images/server_nodes.png?raw=true)
+</div>
 
 
 ### 1. Image Processing Module
@@ -435,8 +446,12 @@ The Caching Management Module is responsible for optimizing data access by manag
 The Monitoring Integration Module plays a crucial role in maintaining the health and performance of the internal modules within the Server Nodes. It integrates with monitoring tools, such as Nagios, to track various metrics, detect anomalies, and generate alerts if issues arise.
 
 ## Internal Structure of AWS databases
+
+ <div style="text-align: center;"> 
+
 ![Database Diagram](https://github.com/Primestyler/image-sharing/blob/main/arc42/images/aws_databases.png?raw=true)
 
+</div>
 
 1. **Data Storage Module:**
    - Responsible for storing and retrieving data.
@@ -455,7 +470,12 @@ The Monitoring Integration Module plays a crucial role in maintaining the health
    - Integrates with the Query Optimization Module to enhance secure data access.
      
 ## Internal Structure of Load Balancer
+
+ <div style="text-align: center;"> 
+
 ![Database Diagram](https://github.com/Primestyler/image-sharing/blob/main/arc42/images/load_balancer.png?raw=true)
+
+</div>
 
 
 1. **Load Balancing Algorithm:**
@@ -471,9 +491,11 @@ The Monitoring Integration Module plays a crucial role in maintaining the health
 
 
 # Cross-cutting Concepts
+ <div style="text-align: center;"> 
 
 ![Topics for crosscutting
 concepts](images/Crosscutting.png)
+</div>
 
 ## Security and Safety
 
@@ -542,8 +564,10 @@ See [Quality Requirements](https://docs.arc42.org/section-10/) in the
 arc42 documentation.
 
 ## Quality Tree
+ <div style="text-align: center;"> 
 
 ![Quality_Tree](images/Quality_Tree.png)
+</div>
 
 ## Quality Scenarios
 
