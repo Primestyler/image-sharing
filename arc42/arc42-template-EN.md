@@ -317,7 +317,7 @@ stores locations with timestamps in near realtime and provides access to locatio
 
 <div class="formalpara-title">
 
-## Image Editing
+## Runtime Scenario: Image Editing
 
  <div style="text-align: center;"> 
 
