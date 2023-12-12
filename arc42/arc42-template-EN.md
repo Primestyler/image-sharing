@@ -412,7 +412,7 @@ The Image Processing Module is a critical component within the Server Nodes resp
 
 ### 2. Database Interaction Module
 
-The Database Interaction Module facilitates communication between the Server Nodes and the underlying database system. It is responsible for storing and retrieving data related to user accounts, uploaded images, and other relevant information. This module ensures seamless data transactions between the server and the persistent storage.
+The Database Interaction Module is responsible for the communication between the Server Nodes and the database. It is responsible for storing and retrieving data related to user accounts, uploaded images, and other relevant information. This module ensures seamless data transactions between the server and the persistent storage.
 
 #### Connections:
 
@@ -422,7 +422,7 @@ The Database Interaction Module facilitates communication between the Server Nod
 
 The Pixlr Integration Module is an external component called by the Server Nodes. It enables the integration of Pixlr, a third-party editing tool. This module acts as a bridge between the Server Nodes and Pixlr, allowing users to access advanced editing tools for their images.
 
-### 4. Caching Management Module
+### 4. Caching Management Module 
 
 The Caching Management Module is responsible for optimizing data access by managing a cache. It stores frequently accessed data locally, reducing the need to fetch the same data repeatedly from the database. This module enhances performance by minimizing latency in data retrieval.
 
