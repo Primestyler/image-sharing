@@ -33,7 +33,7 @@ concepts. For documentation of your own system you use better the
 ## Team
 
 - Lin Hao
-- Hickelsberger
+- Hickelsberger Alexander
 - Kalarickal Dominic
 
 ---
