@@ -1,7 +1,11 @@
 
 <p align="center">
-  <img src="https://github.com/Primestyler/image-sharing/blob/main/arc42/images/arc42-logo.png" alt="Fancygram Logo" width="300"/>
+  <img src="" alt="Fancygram Logo" width="300"/>
 </p>
+<div>
+
+![image](images/arc42-logo.png)
+</div>
 
 <div class="note">
 
@@ -20,10 +24,11 @@ concepts. For documentation of your own system you use better the
 # Fancygram Documentation - arc42
 
 ---
-<p align="center">
-  <img src="https://github.com/Primestyler/image-sharing/blob/main/arc42/images/fancy-logo.png" alt="Fancygram Logo" width="400"/>
-</p>
 
+<div>
+
+![image](images/fancy-logo.png)
+</div>
 *Version 9.2*
 
 *Date: 12.12.2023*
