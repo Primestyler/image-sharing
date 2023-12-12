@@ -367,7 +367,7 @@ The deployment of the image-sharing app involves multiple components distributed
    - Represents the user interface accessible through mobile devices and web browsers.
    - Connected to a Load Balancer for distributing incoming traffic.
 
-2. **Load Balancer:**
+2. **Load Balancer (AWS Elastic Load Balancing):**
    - Manages and distributes incoming requests to the Server Nodes.
    - Ensures high availability and scalability.
    
@@ -380,7 +380,7 @@ The deployment of the image-sharing app involves multiple components distributed
    - Third-party integration providing advanced image editing tools.
    - Enhances the app's editing capabilities.
 
-5. **Caching Layer:**
+5. **Caching Layer (Redis):**
    - Improves performance by caching frequently accessed data.
    - Reduces the load on the server nodes.
 
