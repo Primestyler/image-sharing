@@ -132,7 +132,7 @@ To ensure that every stakeholder is satisfied Fancygram will meet the requiremen
 ### Organizational Constraints
 | ID  | Constraints | Background and/or Motivation                                        
 |-----|-------------|---------------------------------------------------------------------|
-| OB1 | Team        | The team consists of Lin Hao, Hickelsberger and Kalarickal Dominic. |
+| OB1 | Team        | The team consists of Lin Hao, Hickelsberger Alexander and Kalarickal Dominic. |
 
 <div style="page-break-after: always;"></div>
 
