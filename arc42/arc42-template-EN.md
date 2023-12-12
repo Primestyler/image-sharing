@@ -535,33 +535,6 @@ For minimal downtime, Continuous Integration and Deployment will be used so that
 
 <div style="page-break-after: always;"></div>
 
-# Quality Requirements
-
-<div class="formalpara-title">
-
-**Content**
-
-</div>
-
-This section contains all quality requirements as quality tree with
-scenarios. The most important ones have already been described in
-section 1.2. (quality goals)
-
-Here you can also capture quality requirements with lesser priority,
-which will not create high risks when they are not fully achieved.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-Since quality requirements will have a lot of influence on architectural
-decisions you should know for every stakeholder what is really important
-to them, concrete and measurable.
-
-See [Quality Requirements](https://docs.arc42.org/section-10/) in the
-arc42 documentation.
 
 ## Quality Tree
  <div style="text-align: center;"> 
